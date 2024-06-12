@@ -159,7 +159,7 @@ public class Chess {
     public static void changeToRealCoordinates(char x1, char y1, char x2, char y2) {
     }
 
-    public char getPiece(short x, short y) {
+    public char getPiece(char c, char d) {
         return ' '; // Placeholder return value
     }
 
@@ -194,5 +194,21 @@ public class Chess {
 
     public boolean gameOver() {
         return false; // Placeholder return value
+    }
+
+    public void movePiece(char charAt, char charAt2, char charAt3, char charAt4, boolean manualPromotion,
+            boolean updateBoard) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'movePiece'");
+    }
+
+    public void movePieceBack(char charAt, char charAt2, char charAt3, char charAt4) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'movePieceBack'");
+    }
+
+    public List<String> getAllMoves() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getAllMoves'");
     }
 }
