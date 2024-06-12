@@ -1,8 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 @SuppressWarnings("unused")
 public class Chess {
+    public static int W_KING;
     private char[][] board;
     private Bot white, black;
     private List<Pair<Moves, String>> allGameMoves;
@@ -11,6 +13,11 @@ public class Chess {
     private short movesAfterLastPawnMoveOrCapture = 0;
 
     private static final int BOARD_SIZE = 8;
+    public static final boolean BOT_IS_WHITE = false;
+    public static final boolean TWO_BOTS = false;
+    public static final boolean AGAINST_BOT = false;
+    public static final short WHITE_BOT_DIFFICULTY = 0;
+    public static final short BLACK_BOT_DIFFICULTY = 0;
 
     private static final boolean WithinBounds(short coord) {
         return coord >= 0 && coord < BOARD_SIZE;
@@ -210,5 +217,10 @@ public class Chess {
     public List<String> getAllMoves() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'getAllMoves'");
+    }
+
+    public boolean playersTurn(Scanner scanner) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'playersTurn'");
     }
 }

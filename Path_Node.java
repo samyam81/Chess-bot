@@ -3,7 +3,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@SuppressWarnings("static-access")
+@SuppressWarnings("all")
 public class Path_Node {
     private Map<String, Path_Node> childNodeList;
 
@@ -53,7 +53,7 @@ public class Path_Node {
         float maxMoveScore = -9999;
         for (Map.Entry<String, Path_Node> entry : childNodeList.entrySet()) {
             String move = entry.getKey();
-            if (c.getPiece(move.charAt(2), move.charAt(3)) == Chess.W_KING - 7 * c.getTurn()) {
+            if (c.getPiece(move.charAt(2), move.charAt(3)) == Chess.W_KING - 7 * !c.getTurn()) {
                 childNodeList.clear();
                 return move;
             }
